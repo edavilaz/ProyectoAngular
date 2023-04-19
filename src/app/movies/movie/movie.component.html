@@ -1,1 +1,16 @@
-<p>movie works!</p>
+
+
+
+<div class="row m-0 d-flex justify-content-center flex-wrap" >
+    
+        <div *ngFor="let t of lista; let i=index" class=" col-md-3 m-1 card h-80">
+            <div class="card-body">
+                <h2 class="card-title text-black-50">{{t.titulo}}</h2>
+                <img src="assets/img/{{t.imagen}}" alt="" >
+                <p class="card-text">{{t.descripcion}}</p>
+            </div>
+            <div class="card-footer d-grid gap-2"><a class="btn btn-outline-success btn-sm" href="{{t.url}}">Más detalles...</a></div>
+        </div>
+    
+    
+</div>

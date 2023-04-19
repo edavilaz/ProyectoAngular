@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Tarjeta } from '../models/tarjeta';
+import { tarjetas } from '../data/datos';
 
 @Component({
   selector: 'app-movie',
@@ -6,6 +8,12 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class MovieComponent {
+export class MovieComponent { 
+  lista: Tarjeta[]=[];
+
+  constructor(){
+    this.lista = tarjetas;
+    console.log(this.lista);
+  }
 
 }
