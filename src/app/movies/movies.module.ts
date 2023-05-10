@@ -6,6 +6,7 @@ import { MovieComponent } from './movie/movie.component';
 import { SharedModule } from '../shared/shared.module';
 import { AlertaComponent } from './pages/alerta/alerta.component';
 import { AvatarComponent } from './pages/avatar/avatar.component';
+import { PeliculaComponent } from './pages/pelicula/pelicula.component';
 import { BodasComponent } from './pages/bodas/bodas.component';
 import { SociosComponent } from './pages/socios/socios.component';
 import { HombreComponent } from './pages/hombre/hombre.component';
@@ -18,6 +19,7 @@ import { WakandaComponent } from './pages/wakanda/wakanda.component';
     AvatarComponent,
     BodasComponent,
     SociosComponent,
+    PeliculaComponent,
     HombreComponent,
     WakandaComponent,
     AlertaComponent

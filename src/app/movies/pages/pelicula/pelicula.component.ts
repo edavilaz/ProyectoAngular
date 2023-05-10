@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-pelicula',
   templateUrl: './pelicula.component.html',
-  /*styleUrls: ['./pelicula.component.css']*/
+  styleUrls: ['./pelicula.component.css']
 })
 export class PeliculaComponent implements OnInit {
   pelicula: any = {};

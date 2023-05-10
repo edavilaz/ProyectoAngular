@@ -4,6 +4,7 @@ import { AlertaComponent } from './movies/pages/alerta/alerta.component';
 import { AvatarComponent } from './movies/pages/avatar/avatar.component';
 import { BodasComponent } from './movies/pages/bodas/bodas.component';
 import { SociosComponent } from './movies/pages/socios/socios.component';
+import { PeliculaComponent } from './movies/pages/pelicula/pelicula.component';
 import { HombreComponent } from './movies/pages/hombre/hombre.component';
 import { WakandaComponent } from './movies/pages/wakanda/wakanda.component';
 
@@ -20,8 +21,8 @@ const routes: Routes = [
   component: AlertaComponent 
 },
 {
-  path: 'pelicula?id=10010',
-  component: AlertaComponent 
+  path: 'pelicula',
+  component: PeliculaComponent 
 },
 {
   path: 'avatar',
