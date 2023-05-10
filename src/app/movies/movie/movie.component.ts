@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Tarjeta } from '../models/tarjeta';
-import { tarjetas } from '../data/datos';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -12,7 +10,6 @@ import { HttpClient } from '@angular/common/http';
   ]
 })
 export class MovieComponent { 
-  lista: Tarjeta[]=[];
   peliculasPopulares: any[] = [];
   constructor(private http: HttpClient) { }
   ngOnInit() {
