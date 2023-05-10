@@ -1,0 +1,27 @@
+
+
+    <img src="https://image.tmdb.org/t/p/w500{{ pelicula.backdrop_path }}" />
+    
+    <p>{{ pelicula.overview }}</p>
+    
+    <div *ngIf="pelicula.belongs_to_collection">
+      <img src="https://image.tmdb.org/t/p/w500{{ pelicula.belongs_to_collection.poster_path }}" />
+      <img src="https://image.tmdb.org/t/p/w500{{ pelicula.belongs_to_collection.backdrop_path }}" />
+    </div>
+    
+    <div *ngIf="!pelicula.belongs_to_collection">
+      <img src="https://image.tmdb.org/t/p/w500{{ pelicula.poster_path }}" />
+    </div>
+    
+    <h2>Actores</h2>
+    
+    <div class="actores">
+      <div *ngFor="let actor of actores" class="actor">
+        <img *ngIf="actor.profile_path" src="https://image.tmdb.org/t/p/w500{{ actor.profile_path }}" />
+        <p>{{ actor.name }}</p>
+      </div>
+    </div>
+    
+
+
+

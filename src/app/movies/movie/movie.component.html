@@ -1,16 +1,21 @@
 
-
-
 <div class="row m-0 d-flex justify-content-center flex-wrap" >
     
-        <div *ngFor="let t of lista; let i=index" class=" col-md-3 m-1 card h-80 m-3 text-center">
+        <div *ngFor="let pelicula of peliculasPopulares" class=" col-md-3 m-1 card h-80 m-3 text-center">
             <div class="card-body">
-                <h2 class="card-title text-black-50">{{t.titulo}}</h2>
-                <img src="assets/img/{{t.imagen}}" alt="" >
-                <p class="card-text">{{t.descripcion}}</p>
+                <h2 class="card-title text-black-50">{{pelicula.title}}</h2>
+                <img width="45%" src="https://image.tmdb.org/t/p/w500{{pelicula.poster_path}}" alt="{{pelicula.title}}">             
+                <p class="card-text">{{pelicula.overview.substring(0, 200)}}...</p>
+                
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">{{pelicula.release_date}}</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">{{pelicula.popularity}}</button>
+                  </div>
+                  <small class="text-muted">{{pelicula.vote_average}}</small>
+                  <a [routerLink]="['/pelicula', pelicula.id]">Ver más</a>
+         <a class="btn btn-outline-success btn-sm">Más detalles...</a>
             </div>
-            <div class="card-footer d-grid gap-2"><a class="btn btn-outline-success btn-sm" href="{{t.url}}">Más detalles...</a></div>
         </div>
-    
-    
+          </div>  
 </div>

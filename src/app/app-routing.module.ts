@@ -20,6 +20,10 @@ const routes: Routes = [
   component: AlertaComponent 
 },
 {
+  path: 'pelicula?id=10010',
+  component: AlertaComponent 
+},
+{
   path: 'avatar',
   component: AvatarComponent
 },
