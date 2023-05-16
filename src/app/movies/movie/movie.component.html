@@ -5,7 +5,7 @@
             <div class="card-body">
                 <h2 class="card-title text-black-50">{{pelicula.title}}</h2>
                 
-                <img width="45%" src="https://image.tmdb.org/t/p/w500{{pelicula.poster_path}}" alt="{{pelicula.title}}">             
+                <img width="45%" class="zoom" src="https://image.tmdb.org/t/p/w500{{pelicula.poster_path}}" alt="{{pelicula.title}}">             
                 <p class="card-text">{{pelicula.overview.substring(0, 200)}}...</p>
                 <a class="btn btn-outline-success btn-sm mb-2" [routerLink]="['/pelicula']" [queryParams]="{idPelicula: pelicula.id}">Más detalles...</a>
                 
