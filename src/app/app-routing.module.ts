@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PeliculaComponent } from './movies/pages/pelicula/pelicula.component';
+import { ContactoComponent } from './movies/pages/contacto/contacto.component';
 
 
 
@@ -14,7 +15,13 @@ const routes: Routes = [
 {
   path: 'pelicula',
   component: PeliculaComponent 
+  
 },
+{
+  path: 'contacto',
+  component: ContactoComponent
+
+}
 
 
 ];

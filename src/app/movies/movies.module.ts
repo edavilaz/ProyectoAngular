@@ -5,11 +5,13 @@ import { MoviesRoutingModule } from './movies-routing.module';
 import { MovieComponent } from './movie/movie.component';
 import { SharedModule } from '../shared/shared.module';
 import { PeliculaComponent } from './pages/pelicula/pelicula.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 @NgModule({
   declarations: [
     MovieComponent,
     PeliculaComponent,
+    ContactoComponent,
   ],
   imports: [
     CommonModule,
